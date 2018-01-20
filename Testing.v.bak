@@ -1,0 +1,310 @@
+module Testing(sw,key,clk,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7);
+
+	input [17:0]sw;
+	input [3:0]key;
+	input clk;
+	output [0:6] HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7;
+	
+	wire [14:0] num; // 6-bit signed
+	wire [14:0] result0,result1,result2,result3,result4,result5,result6;
+	wire [14:0] result7,result8,result9,result10,result11,result12,result13;
+	//12-bit
+	
+	wire [14:0] newNum, newResult;
+	reg [14:0] lastResult;
+	assign num = sw[4:0] * 100;
+	
+	isNegative(num,lastResult,newNum,newResult);
+	
+	add op0(newNum,newResult,result0);
+	sub op1(newNum,newResult,result1);
+	mul op2(newNum,newResult,result2);
+	div op3(newNum,newResult,result3);
+	rem op4(newNum,newResult,result4);
+	sinf op5(newNum,newResult,result5);
+	cosf op6(newNum,newResult,result6);
+	tanf op7(newNum,newResult,result7);
+	expf op8(newNum,newResult,result8);
+	logf op9(newNum,newResult,result9);
+	facf op10(newNum,newResult,result10);
+	squref op11(newNum,newResult,result11);
+	cubef o12(newNum,newResult,result12);
+	rootf o13(newNum,newResult,result13);
+	
+	//MUX
+
+	always @(posedge clk) begin
+		
+		if(sw[6] == 1 & key[2] ==0) lastResult = result0;
+		else if(sw[7] == 1 & key[2] ==0) lastResult = result1;
+		else if(sw[8] == 1 & key[2] ==0) lastResult = result2;
+		else if(sw[9] == 1 & key[2] ==0) lastResult = result3;
+		else if(sw[10] == 1 & key[2] ==0) lastResult = result4;
+		else if(sw[11] == 1 & key[2] ==0) lastResult = result5;
+		else if(sw[12] == 1 & key[2] ==0) lastResult = result6;
+		else if(sw[13] == 1 & key[2] ==0) lastResult = result7;
+		else if(sw[14] == 1 & key[2] ==0) lastResult = result8;
+		else if(sw[15] == 1 & key[2] ==0) lastResult = result9;
+		else if(sw[16] == 1 & key[2] ==0) lastResult = result10;
+		else if(sw[17] == 1 & key[2] ==0) lastResult = result11;
+		
+		
+		if(key[0] == 0) lastResult = 0;
+		
+		if(key[1] == 0) lastResult = num;
+		
+	end
+	
+	
+	wire [3:0] ones,tens,hundreds,thous,in_ones,in_tens;
+	
+	assign ones = (result0 % 1000 % 100 % 10);
+	assign tens = (result0 % 1000 % 100 - ones) / 10;
+	assign hundreds = (result0 % 1000 - tens * 10 - ones) / 100;
+	assign thous = (result0 - hundreds * 100 - tens * 10 - ones);
+	
+	assign in_ones = sw[5:0] % 10;
+	assign in_tens = (sw[5:0] - ones) / 10;
+	
+	display_7seg d0(ones,HEX0);
+	display_7seg d1(tens,HEX1);
+	display_7seg d2(hundreds,HEX2);
+	display_7seg d3(thous,HEX3);
+	assign HEX4 = (lastResult < 0) ? 7'b1111110 : 7'b1111111;
+	assign HEX5 = 7'b1111111;
+	display_7seg d6(in_ones,HEX6);
+	display_7seg d7(in_tens,HEX7);
+	
+endmodule
+
+module display_7seg(sw,HEX);
+
+   input[3:0] sw;
+   output [0:6]HEX;
+   
+   assign HEX = (sw == 4'b0000) ? 7'b0000001: //0
+                (sw == 4'b0001) ? 7'b1001111: //1
+                (sw == 4'b0010) ? 7'b0010010: //2
+                (sw == 4'b0011) ? 7'b0000110: //3
+                (sw == 4'b0100) ? 7'b1001100: //4
+                (sw == 4'b0101) ? 7'b0100100: //5
+                (sw == 4'b0110) ? 7'b0100000: //6
+                (sw == 4'b0111) ? 7'b0001101: //7
+                (sw == 4'b1000) ? 7'b0000000: //8
+                (sw == 4'b1001) ? 7'b0000100: //9
+                (sw == 4'b1010) ? 7'b0001000: //A
+                (sw == 4'b1011) ? 7'b1100000: //b
+                (sw == 4'b1100) ? 7'b0110001: //C
+                (sw == 4'b1101) ? 7'b1000010: //d
+                (sw == 4'b1110) ? 7'b0110000: //E
+                (sw == 4'b1111) ? 7'b0111000: 7'b1111111; //F else nothing
+   
+endmodule
+
+module add(A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	wire [15:0] c;
+	wire [15:0] S;
+	
+	assign C[0] = 0;
+	
+	FA f0(A[0],result[0],c[0],S[0],c[1]);
+	FA f1(A[1],result[1],c[1],S[1],c[2]);
+	FA f2(A[2],result[2],c[2],S[2],c[3]);
+	FA f3(A[3],result[3],c[3],S[3],c[4]);
+	FA f4(A[4],result[4],c[4],S[4],c[5]);
+	FA f5(A[5],result[5],c[5],S[5],c[6]);
+	FA f6(A[6],result[6],c[6],S[6],S[7]);
+	FA f7(A[7],result[7],c[7],S[7],c[8]);
+	FA f8(A[8],result[8],c[8],S[8],c[9]);
+	FA f9(A[9],result[9],c[9],S[9],c[10]);
+	FA f10(A[10],result[10],c[10],S[10],c[11]);
+	FA f11(A[11],result[11],c[11],S[11],c[12]);
+	FA f11(A[12],result[12],c[12],S[12],c[13]);
+	FA f11(A[13],result[13],c[13],S[13],c[14]);
+	FA f11(A[14],result[14],c[14],S[14],S[15]);
+	
+	assign resultA = S[14:0];
+	
+endmodule
+
+module isNegative(A,result,A1,result1);
+	
+	input [14:0]A;
+	input [14:0]result;
+	
+	output [14:0]A1,result1;
+	
+	assign result1[14] = result[14];
+	assign A1[14] = A[14];
+	assign result1[13:0] = (result[14] == 1) ? ~result[13:0] + 1 : result[13:0];
+	assign A1[13:0] = (A[14] == 1) ? ~A[13:0] + 1 : A[13:0];
+
+endmodule
+
+module sub(A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	wire [15:0] c;
+	wire [15:0] S;
+	
+	assign C[0] = 1;
+	
+	FA f0(~A[0],result[0],c[0],S[0],c[1]);
+	FA f1(~A[1],result[1],c[1],S[1],c[2]);
+	FA f2(~A[2],result[2],c[2],S[2],c[3]);
+	FA f3(~A[3],result[3],c[3],S[3],c[4]);
+	FA f4(~A[4],result[4],c[4],S[4],c[5]);
+	FA f5(~A[5],result[5],c[5],S[5],c[6]);
+	FA f6(~A[6],result[6],c[6],S[6],S[7]);
+	FA f7(~A[7],result[7],c[7],S[7],c[8]);
+	FA f8(~A[8],result[8],c[8],S[8],c[9]);
+	FA f9(~A[9],result[9],c[9],S[9],c[10]);
+	FA f10(~A[10],result[10],c[10],S[10],c[11]);
+	FA f11(~A[11],result[11],c[11],S[11],c[12]);
+	FA f11(~A[12],result[12],c[12],S[12],c[13]);
+	FA f11(~A[13],result[13],c[13],S[13],c[14]);
+	FA f11(~A[14],result[14],c[14],S[14],S[15]);
+	
+	assign resultA = S[14:0];
+	
+endmodule
+
+module mul(A,result,resultA);
+	
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+
+endmodule
+
+module div(A,result,resultA);
+	
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = result / A;
+
+endmodule
+
+module rem (A,result,resultA);
+	
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module sinf (A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module cosf (A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module tanf (A,result,resultA);
+	
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;	
+
+endmodule
+
+module expf (A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module logf (A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module facf (A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module squref (A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module cubef (A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module rootf (A,result,resultA);
+
+	input [14:0]A;
+	input [14:0]result;
+	output [14:0]resultA;
+	
+	assign resultA = A * result;
+	
+endmodule
+
+module FA(a,b,cin,s,cout); //full-adder module
+
+	input a,b,cin;
+	output s,cout;
+	
+	assign cout = (b & cin) | (a & cin) | (a & b); //assign cout
+	assign s = a ^ b ^ cin; //assign s
+	
+endmodule
+
+

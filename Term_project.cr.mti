@@ -1,0 +1,62 @@
+C:/intelFPGA_lite/17.0/Calculator.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/17.0/Calculator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Calculator
+-- Compiling module display_7seg
+-- Compiling module add
+-- Compiling module isNegative
+-- Compiling module sub
+-- Compiling module mul
+-- Compiling module calPP
+-- Compiling module div
+-- Compiling module rem
+-- Compiling module facf
+-- Compiling module squaref
+-- Compiling module sinf
+-- Compiling module cosf
+-- Compiling module expf
+-- Compiling module tanf
+-- Compiling module FA
+
+Top level modules:
+	Calculator
+
+} {} {}} C:/intelFPGA_lite/17.0/Testing.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/17.0/Testing.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Testing
+-- Compiling module display_7seg
+-- Compiling module add
+-- Compiling module isNegative
+-- Compiling module sub
+-- Compiling module mul
+-- Compiling module calPP
+-- Compiling module div
+-- Compiling module rem
+-- Compiling module facf
+-- Compiling module squaref
+-- Compiling module sinf
+-- Compiling module cosf
+-- Compiling module expf
+-- Compiling module tanf
+-- Compiling module FA
+
+Top level modules:
+	Testing
+
+} {} {}} C:/intelFPGA_lite/17.0/Parity2.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/17.0/Parity2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Parity2
+-- Compiling module changeError
+
+Top level modules:
+	Parity2
+
+} {} {}} C:/intelFPGA_lite/17.0/Parity3.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/17.0/Parity3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Parity3
+-- Compiling module changeError
+-- Compiling module OneCounter
+
+Top level modules:
+	Parity3
+
+} {} {}}

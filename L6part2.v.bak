@@ -1,0 +1,27 @@
+module L6part2(enable, reset, clk,Q,HEX0,HEX1,HEX2,HEX3);
+	input enable,reset,clk;
+	output [15:0] Q;
+	output [0:6] HEX0,HEX1,HEX2,HEX3;
+	
+	wire [15:0] T, Qs;
+
+	
+  t_flipflop [15:0] T ({enable,T[0:14]}, clk, reset, Qs);
+  assign T[0:15] = {en,T[0:14]} & Qs[0:15];
+  
+  Q = Qs;
+
+
+endmodule
+
+module t_flipflip (en, clk, reset, Q);
+  input en, clk, reset;
+  output reg Q;
+
+  always @ (posedge clk)
+    if (reset)
+      Q = 0;
+    else if (en)
+      Q <= Q + 1;
+
+endmodule

@@ -1,0 +1,8 @@
+module Parity2(sw,key,LEDR);
+
+	input [17:0]sw;
+	input [3:0]key;
+	output [17:0]LEDR;
+	
+	assign LEDR = sw;
+endmodule

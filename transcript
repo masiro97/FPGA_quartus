@@ -1,0 +1,142 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+project open C:/intelFPGA_lite/17.0/Term_project
+# Loading project Term_project
+# Compile of Calculator.v was successful.
+vsim -gui work.Calculator
+# vsim -gui work.Calculator 
+# Start time: 09:47:15 on Dec 22,2017
+# Loading work.Calculator
+# Loading work.mul
+# Loading work.calPP
+# Loading work.FA
+# Loading work.add
+# Loading work.isNegative
+# Loading work.sub
+# Loading work.div
+# Loading work.rem
+# Loading work.facf
+# Loading work.sinf
+# Loading work.squaref
+# Loading work.cosf
+# Loading work.tanf
+# Loading work.expf
+# Loading work.display_7seg
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(920): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/sq/mm File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(943): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m12 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(944): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m23 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(945): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m25 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(947): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m0 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(948): [PCDPC] - Port size (15) does not match connection size (30) for port 'result'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m1 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(948): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m1 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(949): [PCDPC] - Port size (15) does not match connection size (30) for port 'result'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m2 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(949): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m2 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(950): [PCDPC] - Port size (15) does not match connection size (30) for port 'result'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m3 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(950): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sf/m3 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(920): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/c/sq1/mm File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(981): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/c/m22 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(982): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/c/m24 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(984): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/c/m1 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(985): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/c/m2 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(986): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/c/m3 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(920): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/c/sq1/mm File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(981): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/c/m22 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(982): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/c/m24 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(984): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/c/m1 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(985): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/c/m2 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(986): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/c/m3 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(920): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/sq/mm File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(943): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m12 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(944): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m23 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(945): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m25 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(947): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m0 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(948): [PCDPC] - Port size (15) does not match connection size (30) for port 'result'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m1 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(948): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m1 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(949): [PCDPC] - Port size (15) does not match connection size (30) for port 'result'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m2 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(949): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m2 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(950): [PCDPC] - Port size (15) does not match connection size (30) for port 'result'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m3 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(950): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/s/m3 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1064): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/t/m0 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(920): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/sq/mm File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(920): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/sq0/mm File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1013): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m0 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1014): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m1 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1015): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m2 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1016): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m3 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1017): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m4 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1026): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m5 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1027): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m6 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1028): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m7 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1029): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m8 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1030): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m9 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1031): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m10 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1032): [PCDPC] - Port size (15) does not match connection size (30) for port 'resultA'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(202).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/m11 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/Calculator.v(1041): [PCDPC] - Port size (15) does not match connection size (30) for port 'result'. The port definition is at: C:/intelFPGA_lite/17.0/Calculator.v(123).
+#    Time: 0 ps  Iteration: 0  Instance: /Calculator/e/ad0 File: C:/intelFPGA_lite/17.0/Calculator.v
+# ** Warning: Design size of 26807 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# BKMARK_ERROR: Unknown client: .main_pane.source
+add wave -position insertpoint  \
+sim:/Calculator/sw
+add wave -position insertpoint  \
+sim:/Calculator/result10
+force -freeze sim:/Calculator/sw 101011000100000010 0
+run
+run
+run
+add wave -position insertpoint  \
+sim:/Calculator/lastResult
+run
+run
+run
+# End time: 09:50:57 on Dec 22,2017, Elapsed time: 0:03:42
+# Errors: 1, Warnings: 51

@@ -1,0 +1,32 @@
+C:/intelFPGA_lite/17.0/L5part1.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/17.0/L5part1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module L5part1
+
+Top level modules:
+	L5part1
+
+} {} {}} C:/intelFPGA_lite/17.0/L5part2.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/17.0/L5part2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module L5part2
+
+Top level modules:
+	L5part2
+
+} {} {}} C:/intelFPGA_lite/17.0/L5part3.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/17.0/L5part3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module L5part3
+-- Compiling module latch
+
+Top level modules:
+	L5part3
+
+} {} {}} C:/intelFPGA_lite/17.0/L5part4.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/17.0/L5part4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module L5part4
+-- Compiling module flipflop
+-- Compiling module D_latch
+
+Top level modules:
+	L5part4
+
+} {} {}}
